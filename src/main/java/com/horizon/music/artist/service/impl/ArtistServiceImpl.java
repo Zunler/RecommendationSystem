@@ -7,6 +7,7 @@ import com.horizon.music.artist.vo.Last;
 import com.horizon.music.artist.vo.Music;
 import com.horizon.music.artist.vo.RattingData;
 import com.horizon.music.artist.vo.UserArtist;
+import com.horizon.sm.user.vo.User;
 import groovy.sql.Sql;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -30,11 +31,11 @@ public class ArtistServiceImpl implements IArtistService {
         return (List<Music>) artistDAO.findByVO(new Music(), IMusicSqlTemplate.GET_ALL_MUSICLIST, Music.class);
     }
 
+
     @Override
-    public SqlRowSet getRattingData() {
-        SqlRowSet res=artistDAO.queryRowSet(IMusicSqlTemplate.SEARCH_RATTING_DATA);
-//TODO 改成增量读取
-        return res;
+    public List<Music> getAllRecommedList(int id) {
+        return (List<Music>)artistDAO.findByVO(new Music(), IMusicSqlTemplate.GET_ALL_RECOMMENDLIST
+                +" WHERE A.USER_ID ="+id, Music.class);
     }
 
     @Override

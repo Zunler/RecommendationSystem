@@ -101,12 +101,11 @@
 <!--            <property name="exeJar" value="/root/apache-tomcat-7.0.73/practicaltraining_2.10-1.0.jar" />-->
 <!--            <property name="params" value="hdfs://172.16.29.107:9000/zun/music/out/usrArtist/" />-->
 <!--        </bean>-->
-    <bean id="syncMgrImpl" class="com.horizon.common.quartz.task.impl.GetRattingDataImpl">
+<!--    <bean id="syncMgrImpl" class="com.horizon.common.quartz.task.impl.GetRattingDataImpl">-->
+<!--    </bean>-->
 
-    </bean>
-
-    <!--	<bean id="syncMgrImpl" class="com.horizon.common.quartz.task.impl.TaskSubmit4LivyMgrImpl">-->
-    <!--	</bean>-->
+    	<bean id="syncMgrImpl" class="com.horizon.common.quartz.task.impl.TaskSubmit4LivyMgrImpl">
+    	</bean>
 
     <!--定期保存模型-->
     <!--	<bean id="taskSubmitMgrImpl" class="com.horizon.common.quartz.task.impl.TaskSubmitMgrImpl">-->

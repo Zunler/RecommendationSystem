@@ -41,6 +41,7 @@ public class HDFSUtils {
     public HDFSUtils(Configuration conf) {
 
         try {
+            //设置url，并设置用户为root
             fs = FileSystem.get(URI.create("hdfs://172.16.29.107:9000"),conf ,"root");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

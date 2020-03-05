@@ -28,8 +28,10 @@ class SysUserManagerServiceImpl implements ISysUserManagerService {
 	/**
 	 * 获取访问地址
 	 */
+	@Override
 	public List<String> getAllUrl() {
 		return sysUserDAO.getAllUrl();
+
 	}
 
 	public Map<String, String> checkUser(User user){

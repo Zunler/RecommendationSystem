@@ -46,7 +46,6 @@ com/horizon/common/dao/redis/JedisDataSourceImpl.class
 com/horizon/common/util/StringUtil.class
 com/horizon/common/base/Observer/GoodNotifier.class
 com/horizon/sm/user/web/SysUserController.class
-com/horizon/common/quartz/task/impl/GetRattingDataImpl.class
 com/horizon/common/init/SysInit.class
 com/horizon/music/artist/dao/impl/ArtistDAOImpl.class
 com/horizon/common/redis/model/StationStatus.class

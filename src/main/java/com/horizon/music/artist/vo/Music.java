@@ -64,4 +64,14 @@ public class Music {
     private String artistName;
 
     private String imgPath;
+
+    public String getResourcePath() {
+        return resourcePath;
+    }
+
+    public void setResourcePath(String resourcePath) {
+        this.resourcePath = resourcePath;
+    }
+
+    private String resourcePath;
 }
