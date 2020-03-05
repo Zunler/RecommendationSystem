@@ -25,6 +25,16 @@ app.controller('indexCtrl', function ($http, $scope) {
             $scope.musics = data;
         });
     };
+    $scope.fetchTopMusicList = function () {
+        $http.get('sys/user/topmusiclist').success(function (data) {
+            $scope.topMusics = data;
+        });
+    };
+    $scope.fetchNewMusicList = function () {
+        $http.get('sys/user/newmusiclist').success(function (data) {
+            $scope.newMusics = data;
+        });
+    };
     //加入播放列表，但不播放
     $scope.addToPlayList=function(userArtist){
         userArtist.musicId = userArtist.id;
@@ -59,6 +69,8 @@ app.controller('indexCtrl', function ($http, $scope) {
         });
     }
     $scope.fetchMusicList();
+    $scope.fetchTopMusicList();
+    $scope.fetchNewMusicList();
     $scope.fetchRecommendList()
 
 });

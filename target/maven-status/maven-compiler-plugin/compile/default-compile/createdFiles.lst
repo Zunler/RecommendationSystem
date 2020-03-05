@@ -35,6 +35,8 @@ com/horizon/common/util/sql/SqlBuilder.class
 com/horizon/music/artist/service/IArtistService.class
 com/horizon/common/vo/TradeVO.class
 com/horizon/common/constants/WorkOrderStatusInfo.class
+com/horizon/common/quartz/task/impl/alsModelToMysqlImpl.class
+com/horizon/common/quartz/task/impl/ModelToHDFSImpl.class
 com/horizon/common/util/SysContextUtil.class
 com/horizon/common/quartz/ClusterDetailQuartzJobBean.class
 com/horizon/common/base/RedisClientDao.class
@@ -84,9 +86,8 @@ com/horizon/common/websocket/WebSocketUtil.class
 com/horizon/common/vo/RespVO.class
 com/horizon/common/util/enums/DCFaultEnum.class
 com/horizon/common/filter/XssHttpServletRequestWraper.class
-com/horizon/common/quartz/task/impl/TaskSubmitMgrImpl.class
 com/horizon/common/dao/ISDAO.class
-com/horizon/common/quartz/task/impl/TaskSubmit4LivyMgrImpl.class
 com/horizon/common/util/enums/ACFaultEnum.class
 com/horizon/common/spring/ExtendsWebBinding.class
+com/horizon/common/quartz/task/impl/MysqlToHDFSImpl.class
 com/horizon/common/util/enums/WorkOrderEnum.class

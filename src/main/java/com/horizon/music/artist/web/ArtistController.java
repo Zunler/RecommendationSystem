@@ -53,6 +53,16 @@ public class ArtistController {
 		List<Music> result = artistService.getAllMusicList();
 		return result;
 	}
+	@RequestMapping(value = "/topmusiclist")
+	public @ResponseBody List<Music> topMusiclist() {
+		List<Music> result = artistService.getTopMusicList();
+		return result;
+	}
+	@RequestMapping(value = "/newmusiclist")
+	public @ResponseBody List<Music> newMusiclist() {
+		List<Music> result = artistService.getNewMusicList();
+		return result;
+	}
 	@ResponseBody
 	@RequestMapping(value = "/recommendlist", method = RequestMethod.POST)
 	public List<Music> recommendlist(@RequestBody int id) throws Exception{

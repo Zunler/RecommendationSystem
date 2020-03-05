@@ -31,6 +31,16 @@ public class ArtistServiceImpl implements IArtistService {
         return (List<Music>) artistDAO.findByVO(new Music(), IMusicSqlTemplate.GET_ALL_MUSICLIST, Music.class);
     }
 
+    @Override
+    public List<Music> getNewMusicList() {
+        return (List<Music>)artistDAO.findByVO(new Music(), IMusicSqlTemplate.GET_NEW_MUSICLIST,Music.class);
+    }
+
+    @Override
+    public List<Music> getTopMusicList() {
+        return (List<Music>)artistDAO.findByVO(new Music(), IMusicSqlTemplate.GET_top_MUSICLIST,Music.class);
+    }
+
 
     @Override
     public List<Music> getAllRecommedList(int id) {
