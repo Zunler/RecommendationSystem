@@ -20,7 +20,7 @@
         <log4j.version>1.2.15</log4j.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <jdk.version>1.7</jdk.version>
-        <quartz.version>2.2.1</quartz.version>
+        <quartz.version>2.3.2</quartz.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
